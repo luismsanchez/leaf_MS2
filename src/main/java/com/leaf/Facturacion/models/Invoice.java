@@ -56,6 +56,10 @@ public class Invoice {
         return total;
     }
 
+    public void setTotal(Integer total) {
+        this.total = total;
+    }
+
     public void setDate(Date date) {
         this.date = date;
     }

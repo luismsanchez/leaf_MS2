@@ -80,6 +80,7 @@ public class InvoiceController {
         old_invoice.setProduct(new_invoice.getProduct());
         old_invoice.setPrice(new_invoice.getPrice());
         old_invoice.setQuantity(new_invoice.getQuantity());
+        old_invoice.setTotal(new_invoice.getPrice() * new_invoice.getQuantity());
 
         // ESTO SÍ ACTUALIZA LA BASE DE DATOS
         return repository.save(old_invoice);
